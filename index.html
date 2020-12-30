@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt |  slice: 0, 55 }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+
+  {% for tarea in site.tareas %}
+  <h2><a href="{{ tarea.url }}">{{ tarea.name }} - ({{ tarea.date }})</h2></a>
+{% endfor %}
+
+ {% for tema in site.temas %}
+  <h2><a href="{{ tema.url }}">{{ tema.name }} - ({{ tema.date }})</h2></a>
+{% endfor %}
+</div>
