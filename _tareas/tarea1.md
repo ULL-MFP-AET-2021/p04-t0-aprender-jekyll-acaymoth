@@ -1,4 +1,5 @@
 ---
+  layout: default
   name: tarea1
   visible: true
   date: 2020-11-17

@@ -17,10 +17,10 @@ layout: default
   {% endfor %}
 
   {% for tarea in site.tareas %}
-  <h2><a href="{{ tarea.url }}">{{ tarea.name }} - ({{ tarea.date }})</h2></a>
+  <h2><a href="{{ site.baseurl }}/{{ tarea.url }}">{{ tarea.name }} - ({{ tarea.date }})</h2></a>
 {% endfor %}
 
  {% for tema in site.temas %}
-  <h2><a href="{{ tema.url }}">{{ tema.name }} - ({{ tema.date }})</h2></a>
+  <h2><a href="{{ site.baseurl }}/{{ tema.url }}">{{ tema.name }} - ({{ tema.date }})</h2></a>
 {% endfor %}
 </div>
